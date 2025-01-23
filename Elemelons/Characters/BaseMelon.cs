@@ -14,8 +14,8 @@ public class BaseMelon() : ICharacter, IPlayer
     private double _maxHealth = 100;
     private bool _unalived = false;
     private bool _isAttackable = true;
-    private Backpack? _backpack;
-    private Inventory? _inventory;
+    private Backpack? _backpack = new(100);
+    private Inventory? _inventory = new();
 
     #endregion
 
@@ -50,10 +50,10 @@ public class BaseMelon() : ICharacter, IPlayer
         set{} }
     public Backpack? Backpack { 
         get{ return _backpack; } 
-        set{} }
+        set{ _backpack = new(100); } }
     public Inventory? Inventory { 
         get{ return _inventory; } 
-        set{} }
+        set{ _inventory = new();} }
     #endregion
 
     #region Methods

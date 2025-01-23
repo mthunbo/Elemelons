@@ -3,14 +3,20 @@
 /// <summary>
 /// Class representing a Thief, the thief has a dodge property
 /// </summary>
-public class Thief(string name, double maxHealth, double currentHealth, double nativeDefense, double attackPower, int level, bool unalived, bool isAttackable, int expValue, Backpack loot) : Monster(name, maxHealth, currentHealth, nativeDefense, attackPower, level, unalived, isAttackable, expValue, loot)
+public class Thief() : Monster()
 {
 
+    #region Fields
+    private int _dodgeChance = 10;
+    #endregion
+    
     #region Poperties
     /// <summary>
     /// Determines the % change of a Thief dodging an attack, set in % from 1 to 100, default is 10%
     /// </summary>
-    private int DodgeChance { get; set; } = 10;
+    public int DodgeChance { 
+        get{ return _dodgeChance; } 
+        set{} }
     #endregion
 
     #region Methods

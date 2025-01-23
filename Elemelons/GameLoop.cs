@@ -5,18 +5,12 @@
 /// </summary>
 public class GameLoop
 {
-    public Backpack loot = new(100);
-    public Backpack Backpack = new(100);
-    public Inventory inventory= new("Player equipment");
     public BaseMelon Player { get; set; } = new();
     public Brigand Enemy { get; set;} = new();
 
     public void Run(BaseMelon player)
     {
         Player = player;
-        Enemy.Loot = loot;
-        Player.Backpack = Backpack;
-        Player.Inventory = inventory;
         Console.Clear();
         var keepPlaying = 1;
         while(keepPlaying == 1)

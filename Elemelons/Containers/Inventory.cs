@@ -3,11 +3,16 @@
 /// <summary>
 /// Class representing the items equipped by the player
 /// </summary>
-public class Inventory(string description) : Container(description)
+public class Inventory : Container
 {
+    public Inventory(): base("Player Inventory")
+    {
+
+    }
+    
     #region Fields
     private Dictionary<string, Equipment> _equipment = new Dictionary<string, Equipment>();
-    private double _armoerValue;
+    private double _armorValue;
     private double _weaponDmg;
     #endregion
 
@@ -29,9 +34,9 @@ public class Inventory(string description) : Container(description)
     {
         foreach (var item in _equipment)
         {
-            _armoerValue += item.Value.Attack;
+            _armorValue += item.Value.Attack;
         }
-        return _armoerValue;
+        return _armorValue;
     }
 
     /// <summary>

@@ -7,6 +7,7 @@ public class Container
     #region Fields
     private string _description;
     private Dictionary<string, Item> _items;
+    private int _storageLimit = 100;
     #endregion
 
 
@@ -41,7 +42,11 @@ public class Container
     /// <summary>
     /// Returns the storage limit of the container
     /// </summary>
-    public int StorageLimit { get; set; }
+    public int StorageLimit 
+    { 
+        get { return _storageLimit; } 
+        set { _storageLimit = value;}
+    }
 
     /// <summary>
     /// Returns the amount of storage currently used

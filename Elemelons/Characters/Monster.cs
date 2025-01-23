@@ -49,7 +49,7 @@ public class Monster() : IMonster, ICharacter
         set{} }
     public Backpack? Loot { 
         get{ return _loot;} 
-        set{} }
+        set{ _loot = new(100);} }
     #endregion
 
 

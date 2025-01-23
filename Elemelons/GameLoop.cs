@@ -9,7 +9,7 @@ public class GameLoop
     public Backpack Backpack = new(100);
     public Inventory inventory= new("Player equipment");
     public BaseMelon Player { get; set; } = new();
-    public Brigand Enemy { get; set;} = new("Børge");
+    public Brigand Enemy { get; set;} = new();
 
     public void Run(BaseMelon player)
     {

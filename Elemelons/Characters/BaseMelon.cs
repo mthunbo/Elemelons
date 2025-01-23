@@ -1,19 +1,62 @@
 
 
-public class BaseMelon(string name ="John Doe", double attackPower = 10, double nativeDefense = 2, int experience = 0, int level = 1, double currentHealth = 100, double maxHealth = 100, bool unalived = false, bool isAttackable = true, Backpack backpack = null, Inventory inventory = null) : ICharacter, IPlayer
-{
-    public string Name { get; set; } = name;
-    public double MaxHealth { get; set; } = maxHealth;
-    public double CurrentHealth { get; set; } = currentHealth;
-    public double NativeDefense { get; set; } = nativeDefense;
-    public double AttackPower { get; set; } = attackPower;
-    public int Level { get; set; } = level;
-    public bool Unalived { get; set; } = unalived;
-    public bool IsAttackable { get; set; } = isAttackable;
-    public int Experience { get; set; } = experience;
-    public Backpack? Backpack { get; set; } = backpack;
-    public Inventory Inventory { get; set; } = inventory;
+using System.Reflection.Metadata;
 
+public class BaseMelon() : ICharacter, IPlayer
+{
+    #region Fields
+    private string _name = "John Doe";
+    private double _attackPower = 10;
+    private double _nativeDfense = 2;
+    private int _experience = 0;
+    private int _level = 1;
+    private double _currentHealth = 100;
+    private double _maxHealth = 100;
+    private bool _unalived = false;
+    private bool _isAttackable = true;
+    private Backpack? _backpack;
+    private Inventory? _inventory;
+
+    #endregion
+
+
+    #region Properties
+    public string Name { 
+        get{ return _name; } 
+        set{} }
+    public double AttackPower { 
+        get{ return _attackPower; }
+        set{} }
+    public double NativeDefense { 
+        get{ return _nativeDfense; } 
+        set{} }
+    public int Experience { 
+        get{ return _experience; } 
+        set{} }
+    public int Level { 
+        get{ return _level; } 
+        set{} }
+    public double CurrentHealth { 
+        get{ return _currentHealth;} 
+        set{} }
+    public double MaxHealth { 
+        get{ return _maxHealth; } 
+        set{} }
+    public bool Unalived { 
+        get{ return _unalived; } 
+        set{} }
+    public bool IsAttackable { 
+        get{ return _isAttackable; } 
+        set{} }
+    public Backpack? Backpack { 
+        get{ return _backpack; } 
+        set{} }
+    public Inventory? Inventory { 
+        get{ return _inventory; } 
+        set{} }
+    #endregion
+
+    #region Methods
     public virtual double Attack()
     {
         return AttackModifier(AttackPower);
@@ -84,4 +127,5 @@ public class BaseMelon(string name ="John Doe", double attackPower = 10, double 
         Level += 1;
         Experience -= 100;
     }
+    #endregion
 }

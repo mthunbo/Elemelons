@@ -10,11 +10,11 @@ interface IPlayer
     /// <summary>
     /// Backpack of the player containing any and all items gotten throughout the game
     /// </summary>
-    Backpack Backpack{ get; set; }
+    Backpack? Backpack{ get; set; }
     /// <summary>
     /// Inventory of the player, contains the armor the player is wearing
     /// </summary>
-    Inventory Inventory{ get; set; }
+    Inventory? Inventory{ get; set; }
     #endregion
 
     #region Methods

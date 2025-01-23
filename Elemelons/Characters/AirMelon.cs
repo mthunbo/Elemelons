@@ -1,15 +1,18 @@
 
 
-public class AirMelon(string name, double attackPower, double nativeDefense, int experience, int level, double currentHealth, double maxHealth, bool unalived, bool isAttackable, Backpack backpack, Inventory inventory) : BaseMelon(name, attackPower, nativeDefense, experience, level, currentHealth, maxHealth, unalived, isAttackable, backpack, inventory)
+public class AirMelon() : BaseMelon()
 {
-
+    #region Fields
+    private double _dodgeChance = 10;
+    #endregion
     
-
     #region Properties
     /// <summary>
     /// Dodge chance property, default and base level is 10%
     /// </summary>
-    private double DodgeChance {get; set; } = 10;
+    public double DodgeChance {
+        get{ return _dodgeChance; } 
+        set{} }
     #endregion
 
 

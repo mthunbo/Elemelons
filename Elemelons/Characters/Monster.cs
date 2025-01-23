@@ -3,19 +3,53 @@
 /// <summary>
 /// Base Monster class 
 /// </summary>
-public class Monster(string name = "", double maxHealth = 100, double currentHealth = 100, double nativeDefense = 2, double attackPower = 10, int level = 1, bool unalived = false, bool isAttackable = true, int expValue = 20, Backpack loot = null) : IMonster, ICharacter
+public class Monster() : IMonster, ICharacter
 {
+
+    #region Fields
+    private string _name = "";
+    private double _attackPower = 10;
+    private double _nativeDfense = 2;
+    private int _expValue = 20;
+    private int _level = 1;
+    private double _currentHealth = 100;
+    private double _maxHealth = 100;
+    private bool _unalived = false;
+    private bool _isAttackable = true;
+    private Backpack? _loot = null;
+    #endregion
+
     #region Properties
-    public string Name { get; set; } = name;
-    public double MaxHealth { get; set; } = maxHealth;
-    public double CurrentHealth { get; set; } = currentHealth;
-    public double NativeDefense { get; set; } = nativeDefense;
-    public double AttackPower { get; set; } = attackPower;
-    public int Level { get; set; } = level;
-    public int ExpValue { get; set;} = expValue;
-    public bool Unalived { get; set; } = unalived;
-    public bool IsAttackable { get; set; } = isAttackable;
-    public Backpack Loot { get; set;} = loot;
+    public string Name { 
+        get{ return _name;} 
+        set{} }
+    public double AttackPower { 
+        get{ return _attackPower;} 
+        set{} }
+    public double NativeDefense { 
+        get{ return _nativeDfense;} 
+        set{} }
+    public int ExpValue { 
+        get{ return _expValue;} 
+        set{}}
+    public int Level { 
+        get{ return _level;} 
+        set{} }
+    public double CurrentHealth { 
+        get{ return _currentHealth;} 
+        set{} }
+    public double MaxHealth { 
+        get{ return _maxHealth;} 
+        set{} }
+    public bool Unalived { 
+        get{ return _unalived;} 
+        set{} }
+    public bool IsAttackable { 
+        get{ return _isAttackable;} 
+        set{} }
+    public Backpack? Loot { 
+        get{ return _loot;} 
+        set{} }
     #endregion
 
 

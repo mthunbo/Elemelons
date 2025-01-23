@@ -1,6 +1,6 @@
 
 
-public class Watermelon(string name, double attackPower, double nativeDefense, int experience, int level, double currentHealth, double maxHealth, bool unalived, bool isAttackable, Backpack backpack, Inventory inventory) : BaseMelon(name, attackPower, nativeDefense, experience, level, currentHealth, maxHealth, unalived, isAttackable, backpack, inventory)
+public class Watermelon() : BaseMelon()
 {
 
     #region Overridden Methods

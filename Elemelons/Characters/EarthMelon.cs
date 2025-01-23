@@ -1,6 +1,6 @@
 
 
-public class EarthMelon(string name, double attackPower, double nativeDefense, int experience, int level, double currentHealth, double maxHealth, bool unalived, bool isAttackable, Backpack backpack, Inventory inventory) : BaseMelon(name, attackPower, nativeDefense, experience, level, currentHealth, maxHealth, unalived, isAttackable, backpack, inventory)
+public class EarthMelon() : BaseMelon()
 {
     public override void LevelUp()
     {

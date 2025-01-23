@@ -1,17 +1,25 @@
 
 
-public class FireMelon(string name, double attackPower, double nativeDefense, int experience, int level, double currentHealth, double maxHealth, bool unalived, bool isAttackable, Backpack backpack, Inventory inventory) : BaseMelon(name, attackPower, nativeDefense, experience, level, currentHealth, maxHealth, unalived, isAttackable, backpack, inventory)
+public class FireMelon() : BaseMelon()
 {
+    #region Fields
+    private int _critChance = 10;
+    private double _critDmg = 1.2;
+    #endregion
 
     #region Properties
     /// <summary>
     /// Determines the % change of a FireMelon doing a critical hit, set in % from 1 to 100, default is 10%
     /// </summary>
-    private int CritChance { get; set; } = 10;
+    public int CritChance { 
+        get{ return _critChance; } 
+        set{} }
     /// <summary>
     /// Crit damage property, default is 20%
     /// </summary>
-    private double CritDmg { get; set; } = 1.2;
+    public double CritDmg { 
+        get{ return _critDmg; } 
+        set{} }
     #endregion
 
 

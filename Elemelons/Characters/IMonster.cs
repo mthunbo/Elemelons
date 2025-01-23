@@ -11,5 +11,5 @@ interface IMonster
     /// <summary>
     /// Contains the loot possible to get from the monster
     /// </summary>
-    Backpack Loot { get; set; }
+    Backpack? Loot { get; set; }
 }

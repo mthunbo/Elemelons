@@ -1,0 +1,15 @@
+c:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.AssemblyInfoInputs.cache
+c:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.AssemblyInfo.cs
+c:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.csproj.CoreCompileInputs.cache
+c:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.sourcelink.json
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\bin\Debug\net9.0\Elemelons.exe
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\bin\Debug\net9.0\Elemelons.deps.json
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\bin\Debug\net9.0\Elemelons.runtimeconfig.json
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\bin\Debug\net9.0\Elemelons.dll
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\bin\Debug\net9.0\Elemelons.pdb
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.dll
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\refint\Elemelons.dll
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.pdb
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.genruntimeconfig.cache
+C:\Users\markt\github-classroom\Aarhus-tech-project\skab-dit-eget-rpg-eventyr-i-konsolmilj-mthunbo\Elemelons\Elemelons\obj\Debug\net9.0\ref\Elemelons.dll

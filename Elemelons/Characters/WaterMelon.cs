@@ -1,5 +1,7 @@
 
-
+/// <summary>
+/// One of 4 classes, most balanced class
+/// </summary>
 public class Watermelon() : BaseMelon()
 {
 
@@ -7,8 +9,8 @@ public class Watermelon() : BaseMelon()
     public override void LevelUp()
     {
         MaxHealth *= 1.3;
-        AttackPower *= 1.2;
-        NativeDefense *= 1.2;
+        AttackPower *= 1.3;
+        NativeDefense *= 1.3;
         Level += 1;
         Experience -= 100;
     }

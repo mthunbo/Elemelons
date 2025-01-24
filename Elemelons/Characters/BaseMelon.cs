@@ -1,8 +1,7 @@
-
-
-using System.Reflection.Metadata;
-
-public class BaseMelon() : ICharacter, IPlayer
+/// <summary>
+/// Base class that the other melon classes inherit from
+/// </summary>
+public class BaseMelon : ICharacter, IPlayer
 {
     #region Fields
     private string _name = "John Doe";
@@ -23,37 +22,37 @@ public class BaseMelon() : ICharacter, IPlayer
     #region Properties
     public string Name { 
         get{ return _name; } 
-        set{} }
+        set{ _name = value; } }
     public double AttackPower { 
         get{ return _attackPower; }
-        set{} }
+        set{ _attackPower = value; } }
     public double NativeDefense { 
         get{ return _nativeDfense; } 
-        set{} }
+        set{ _nativeDfense = value; } }
     public int Experience { 
         get{ return _experience; } 
-        set{} }
+        set{ _experience = value;} }
     public int Level { 
         get{ return _level; } 
-        set{} }
+        set{ _level = value;} }
     public double CurrentHealth { 
         get{ return _currentHealth;} 
-        set{} }
+        set{ _currentHealth = value;} }
     public double MaxHealth { 
         get{ return _maxHealth; } 
-        set{} }
+        set{ _maxHealth = value;} }
     public bool Unalived { 
         get{ return _unalived; } 
-        set{} }
+        set{ _unalived = value;} }
     public bool IsAttackable { 
         get{ return _isAttackable; } 
-        set{} }
+        set{ _isAttackable = value;} }
     public Backpack? Backpack { 
         get{ return _backpack; } 
-        set{ _backpack = new(100); } }
+        set{ _backpack = value; } }
     public Inventory? Inventory { 
         get{ return _inventory; } 
-        set{ _inventory = new();} }
+        set{ _inventory = value;} }
     #endregion
 
     #region Methods

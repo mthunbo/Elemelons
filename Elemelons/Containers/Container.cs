@@ -45,7 +45,17 @@ public class Container
     public int StorageLimit 
     { 
         get { return _storageLimit; } 
-        set { _storageLimit = value;}
+        set
+        {
+            if(value <= 0)
+            {
+                _storageLimit = 100;
+            }
+            else
+            {
+                _storageLimit = value;
+            }
+        }
     }
 
     /// <summary>

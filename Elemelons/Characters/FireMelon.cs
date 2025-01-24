@@ -1,5 +1,7 @@
 
-
+/// <summary>
+/// One of 4 classes, unique Crit class
+/// </summary>
 public class FireMelon() : BaseMelon()
 {
     #region Fields

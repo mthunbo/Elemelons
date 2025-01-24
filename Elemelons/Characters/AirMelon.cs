@@ -1,5 +1,6 @@
-
-
+/// <summary>
+/// One of 4 classes, unique Dodge class 
+/// </summary>
 public class AirMelon() : BaseMelon()
 {
     #region Fields

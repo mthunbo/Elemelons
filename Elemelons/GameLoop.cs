@@ -1,5 +1,3 @@
-
-
 /// <summary>
 /// Class responsible for the game loop and logic
 /// </summary>

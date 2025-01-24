@@ -16,7 +16,7 @@ public class Monster() : IMonster, ICharacter
     private double _maxHealth = 100;
     private bool _unalived = false;
     private bool _isAttackable = true;
-    private Backpack? _loot = null;
+    private Backpack? _loot = new(100);
     #endregion
 
     #region Properties
@@ -49,7 +49,7 @@ public class Monster() : IMonster, ICharacter
         set{} }
     public Backpack? Loot { 
         get{ return _loot;} 
-        set{ _loot = new(100);} }
+        set{ _loot = value;} }
     #endregion
 
 
@@ -79,6 +79,14 @@ public class Monster() : IMonster, ICharacter
     public double DefendModifier(double damage)
     {
         return damage -= NativeDefense;
+    }
+    public virtual void LevelUp()
+    {
+        MaxHealth *= 1.2;
+        AttackPower *= 1.2;
+        NativeDefense *= 1.2;
+        ExpValue *= 2;
+        Level += 1;
     }
     public override string ToString()
     {

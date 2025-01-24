@@ -5,16 +5,33 @@
 public class Chest :Container
 {
 
-    public Chest(int maxValue) : base("Chest")
+    public Chest() : base("Chest")
     {
-        MaxValue = maxValue;
+        _maxValue = MaxValue;
     }
+
+    #region Fields
+    private int _maxValue = 100;
+    #endregion
 
     #region Properties
     /// <summary>
     /// Max combined value of all items in the chest
     /// </summary>
-    private int MaxValue { get; set; }
+    public int MaxValue { 
+        get{ return _maxValue; } 
+        set
+        {
+            if(value < 0)
+            {
+                _maxValue = 100;
+            }
+            else
+            {
+                _maxValue = value;
+            }
+        }
+    }
     #endregion
 
     #region Methods

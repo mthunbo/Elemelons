@@ -36,9 +36,9 @@ public class Equipment : Item
         get{ return _attack; }
         set
         {
-            if (value <= 0)
+            if (value < 0)
             {
-                _attack = 1.0;
+                _attack = 0.0;
             }
             else
             {
@@ -50,9 +50,9 @@ public class Equipment : Item
         get{ return _magicAttack; }
         set
         {
-            if (value <= 0)
+            if (value < 0)
             {
-                _magicAttack = 1.0;
+                _magicAttack = 0.0;
             }
             else
             {
@@ -64,9 +64,9 @@ public class Equipment : Item
         get{ return _defense; }
         set
         {
-            if(value <= 0)
+            if(value < 0)
             {
-                _defense = 1.0;
+                _defense = 0.0;
             }
             else
             {
@@ -78,9 +78,9 @@ public class Equipment : Item
         get{ return _magicDefense; }
         set
         {
-            if (value <= 0)
+            if (value < 0)
             {
-                _magicDefense = 1.0;
+                _magicDefense = 0.0;
             }
             else
             {

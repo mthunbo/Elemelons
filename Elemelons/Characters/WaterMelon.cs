@@ -2,7 +2,7 @@
 /// <summary>
 /// One of 4 classes, most balanced class
 /// </summary>
-public class Watermelon() : BaseMelon()
+public class Watermelon(string name) : BaseMelon(name)
 {
 
     #region Overridden Methods

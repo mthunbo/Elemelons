@@ -2,7 +2,7 @@
 /// <summary>
 /// One of 4 classes, unique Crit class
 /// </summary>
-public class FireMelon() : BaseMelon()
+public class FireMelon(string name) : BaseMelon(name)
 {
     #region Fields
     private int _critChance = 10;

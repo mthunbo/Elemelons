@@ -7,7 +7,7 @@ using System.Globalization;
 public class CharCreationMenu
 {
     #region Fields
-    private BaseMelon _baseMelon = new();
+    private BaseMelon _baseMelon = new("");
     #endregion
 
     #region Constructor
@@ -51,27 +51,19 @@ public class CharCreationMenu
         switch (choice)
         {
             case 1:
-                FireMelon fireMelon = new() {
-                    Name = name
-                };
+                FireMelon fireMelon = new(name);
                 return fireMelon;
             case 2:
-                Watermelon waterMelon = new() {
-                    Name = name
-                };
+                Watermelon waterMelon = new(name);
                 return waterMelon;
             case 3:
-                AirMelon airMelon = new() {
-                    Name = name
-                };
+                AirMelon airMelon = new(name);
                 return airMelon;
             case 4:
-                EarthMelon earthMelon = new() {
-                    Name = name
-                };
+                EarthMelon earthMelon = new(name);
                 return earthMelon;
             default:
-                return new BaseMelon();
+                return new BaseMelon(name);
         }
     }
     #endregion

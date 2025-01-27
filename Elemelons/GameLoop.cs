@@ -3,8 +3,8 @@
 /// </summary>
 public class GameLoop
 {
-    public BaseMelon Player { get; set; } = new();
-    public Brigand Enemy { get; set;} = new();
+    public BaseMelon? Player { get; set; }
+    public Brigand? Enemy { get; set;}
 
     public void Run(BaseMelon player)
     {

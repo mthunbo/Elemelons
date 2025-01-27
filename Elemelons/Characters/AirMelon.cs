@@ -1,7 +1,7 @@
 /// <summary>
 /// One of 4 classes, unique Dodge class 
 /// </summary>
-public class AirMelon() : BaseMelon()
+public class AirMelon(string name) : BaseMelon(name)
 {
     #region Fields
     private double _dodgeChance = 10;
@@ -13,7 +13,7 @@ public class AirMelon() : BaseMelon()
     /// </summary>
     public double DodgeChance {
         get{ return _dodgeChance; } 
-        set{} }
+        set{ _dodgeChance = value; } }
     #endregion
 
 

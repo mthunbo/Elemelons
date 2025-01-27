@@ -2,7 +2,7 @@
 /// <summary>
 /// One of 4 classes, high defensive class
 /// </summary>
-public class EarthMelon() : BaseMelon()
+public class EarthMelon(string name) : BaseMelon(name)
 {
     public override void LevelUp()
     {

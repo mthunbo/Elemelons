@@ -15,7 +15,7 @@ public class Item
     #region Properties
     public string Description { 
         get{ return _description; } 
-        set{} }
+        set{ _description = value; } }
     public int Weight { 
         get{ return _weight; } 
         set

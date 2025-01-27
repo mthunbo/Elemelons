@@ -13,9 +13,15 @@ public class BaseMelon : ICharacter, IPlayer
     private double _maxHealth = 100;
     private bool _unalived = false;
     private bool _isAttackable = true;
-    private Backpack? _backpack = new(100);
-    private Inventory? _inventory = new();
+    private Backpack _backpack = new(100);
+    private Inventory _inventory = new();
+    #endregion
 
+    #region Constructor
+    public BaseMelon(string name)
+    {
+        Name = name;
+    }
     #endregion
 
 

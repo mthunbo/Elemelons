@@ -12,6 +12,13 @@ public class Item
     private double _value = 1.0;
     #endregion
 
+    public Item(string description, int weight, int value)
+    {
+        Description = description;
+        Weight = weight;
+        Value = value;
+    }
+
     #region Properties
     public string Description { 
         get{ return _description; } 

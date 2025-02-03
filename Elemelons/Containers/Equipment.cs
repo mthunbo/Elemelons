@@ -8,14 +8,14 @@ public class Equipment : Item
     
     #region Fields
     private string _type = "N/A";
-    private double _defense = 1.0;
-    private double _magicDefense = 1.0;
-    private double _attack = 1.0;
-    private double _magicAttack = 1.0;
+    private double _defense = 0.0;
+    private double _magicDefense = 0.0;
+    private double _attack = 0.0;
+    private double _magicAttack = 0.0;
     #endregion
 
     #region Constructor
-    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense, string description)
+    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense, string description, int weight, int value) : base(description, weight, value)
     {
         Type = type;
         Attack = attack;
@@ -23,6 +23,8 @@ public class Equipment : Item
         Defense = defense;
         MagicDefense = magicDefense;
         Description = description;
+        Weight = weight;
+        Value = value;
     }
     #endregion
 
@@ -93,7 +95,8 @@ public class Equipment : Item
     #region Methods
     public override string ToString()
     {
-        return @$"{Description}
+        return @$"
+        {Description}
         Weight {Weight} Kg
         Worth  {Value} Gold
         Stats:

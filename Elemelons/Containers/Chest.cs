@@ -22,7 +22,7 @@ public class Chest :Container
         get{ return _maxValue; } 
         set
         {
-            if(value < 0)
+            if(value < 100)
             {
                 _maxValue = 100;
             }

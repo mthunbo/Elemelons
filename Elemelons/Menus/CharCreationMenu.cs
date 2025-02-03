@@ -46,7 +46,7 @@ public class CharCreationMenu
     #endregion
 
     #region Methods
-    public BaseMelon CreateMelon(int choice, string name)
+    private static BaseMelon CreateMelon(int choice, string name)
     {
         switch (choice)
         {

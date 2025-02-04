@@ -1,18 +1,19 @@
 ﻿//var Game = new MainMenu();
 //Game.Show();
+using System.Text;
 using System.Threading;
 using Spectre.Console;
 
 
+var table = new Table()
+    .AddColumn("Testing")
+    .AddColumn("Testing 2")
+    .AddRow("baz","maz")
+    .AddRow("spaz","jaazz")
+    .Title("Elemelons");
 
-var table = new Table();
-table.AddColumn("Testing");
-table.AddColumn("Testing 2").Centered();
 
-table.AddRow("baz");
-table.AddRow("spaz");
-
-table.Border(TableBorder.HeavyHead);
+table.Columns[1].Centered();
 
 AnsiConsole.Write(table);
 

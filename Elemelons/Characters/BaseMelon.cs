@@ -53,10 +53,10 @@ public class BaseMelon : ICharacter, IPlayer
     public bool IsAttackable { 
         get{ return _isAttackable; } 
         set{ _isAttackable = value;} }
-    public Backpack? Backpack { 
+    public Backpack Backpack { 
         get{ return _backpack; } 
         set{ _backpack = value; } }
-    public Inventory? Inventory { 
+    public Inventory Inventory { 
         get{ return _inventory; } 
         set{ _inventory = value;} }
     #endregion

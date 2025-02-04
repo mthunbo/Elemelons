@@ -28,12 +28,15 @@ public class CharCreationMenu
             int choice = int.Parse(Console.ReadKey().KeyChar.ToString());
             if (!(choice < 1 && choice > 4))
             {
-                Console.WriteLine("Please enter the name of your Character:");
+                Console.WriteLine("\nPlease enter the name of your Character:");
                 string name = Console.ReadLine();
                 BaseMelon = CreateMelon(choice, name);
                 choiceMade = true;            
             }
-            Console.WriteLine("Invalid number try again");
+            else
+            {
+                Console.WriteLine("Invalid number try again");
+            }
 
         }
     }

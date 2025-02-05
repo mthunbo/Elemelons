@@ -8,23 +8,25 @@ public class Equipment : Item
     
     #region Fields
     private string _type = "N/A";
-    private double _defense = 0.0;
-    private double _magicDefense = 0.0;
     private double _attack = 0.0;
     private double _magicAttack = 0.0;
+    private double _defense = 0.0;
+    private double _magicDefense = 0.0;
+    private string _rarity = "Common";
+    private int _durability = 100;
+    private int _maxDurability = 100;
     #endregion
 
     #region Constructor
-    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense, string description, int weight, int value) : base(description, weight, value)
+    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense, string description, int weight, int value) 
+        :base(description, weight, value)
     {
         Type = type;
         Attack = attack;
         MagicAttack = magicAttack;
         Defense = defense;
         MagicDefense = magicDefense;
-        Description = description;
-        Weight = weight;
-        Value = value;
+
     }
     #endregion
 
@@ -87,6 +89,36 @@ public class Equipment : Item
             else
             {
                 _magicDefense = value;
+            }
+        }
+    }
+    public string Rarity {
+        get{ return _rarity; }
+        set{ _rarity = value;}
+    }
+    public int Durability {
+        get{ return _durability; }
+        set{ 
+            if (value > _maxDurability)
+            {
+                _durability = _maxDurability;
+            }
+            else
+            {
+                _durability = value; 
+            }
+        }
+    }
+    public int MaxDurability {
+        get{ return _maxDurability;}
+        set{
+            if (value < 1)
+            {
+                _maxDurability = 100;
+            }
+            else
+            {
+                _maxDurability = value;
             }
         }
     }

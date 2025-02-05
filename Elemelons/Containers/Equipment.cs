@@ -18,7 +18,7 @@ public class Equipment : Item
     #endregion
 
     #region Constructor
-    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense, string description, int weight, int value) 
+    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense, string description, int weight, int value, int durability, int maxDurability, string rarity) 
         :base(description, weight, value)
     {
         Type = type;
@@ -26,7 +26,9 @@ public class Equipment : Item
         MagicAttack = magicAttack;
         Defense = defense;
         MagicDefense = magicDefense;
-
+        Rarity = rarity;
+        Durability = durability;
+        MaxDurability = maxDurability;
     }
     #endregion
 
@@ -125,17 +127,39 @@ public class Equipment : Item
     #endregion
 
     #region Methods
+    /// <summary>
+    /// Scales the stats of the equipment according to its rarity
+    /// </summary>
+    public void ScaleStats()
+    {
+        double rarityMultiplier = Rarity switch
+        {
+            "Common" => 1.0,
+            "Uncommon" => 1.2,
+            "Rare" => 1.5,
+            "Epic" => 2.0,
+            "Legendary" => 3.0,
+            _ => 1.0
+        };
+
+        Attack *= rarityMultiplier;
+        MagicAttack *= rarityMultiplier;
+        Defense *= rarityMultiplier;
+        MagicDefense *= rarityMultiplier;
+    }
     public override string ToString()
     {
         return @$"
         {Description}
+        {Rarity} {Type}
         Weight {Weight} Kg
         Worth  {Value} Gold
         Stats:
         Attack: {Attack} Dmg
         Magic Attack: {MagicAttack} Dmg
         Defense: {Defense}
-        Magic Defense: {MagicDefense}";
+        Magic Defense: {MagicDefense}
+        Durability: {Durability}/{MaxDurability}";
 
     }
     #endregion

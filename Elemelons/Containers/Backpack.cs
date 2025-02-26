@@ -3,6 +3,10 @@
 /// </summary>
 public class Backpack : Container
 {
+
+    #region Fields
+    private int _storageLimit;
+    #endregion
     #region Constructors
     public Backpack(int storageLimit) : base("Backpack"){
         StorageLimit = storageLimit;
@@ -23,6 +27,24 @@ public class Backpack : Container
             return value;
         }
     }
+    /// <summary>
+    /// Returns the storage limit of the container
+    /// </summary>
+    public int StorageLimit
+    {
+        get => _storageLimit;
+        set => _storageLimit = value > 0 ? value : 100;
+    }
+
+    /// <summary>
+    /// Returns the amount of storage currently used
+    /// </summary>
+    public int StorageUsed => Items.Sum(item => item.Weight) + Equipment.Sum(eq => eq.Weight);
+
+    /// <summary>
+    /// Returns the storage space left in the container
+    /// </summary>
+    public int StorageLeft => StorageLimit - StorageUsed;
     #endregion
 
 

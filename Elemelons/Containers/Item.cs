@@ -9,10 +9,10 @@ public class Item
     #region Fields
     private string _description ="";
     private int _weight = 1;
-    private double _value = 1.0;
+    private int _value = 1;
     #endregion
 
-    public Item(string description, int weight, int value)
+    public Item(string description, int weight = 1, int value = 1)
     {
         Description = description;
         Weight = weight;
@@ -20,36 +20,31 @@ public class Item
     }
 
     #region Properties
-    public string Description { 
-        get{ return _description; } 
-        set{ _description = value; } }
-    public int Weight { 
-        get{ return _weight; } 
-        set
-        { 
-            if(value <= 0)
-            {
-            _weight = 1;
-            }
-            else
-            {
-                _weight = value;
-            }
-        }
+    /// <summary>
+    /// Returns a description of the item
+    /// </summary>
+    public string Description
+    {
+        get { return _description; }
+        set { _description = value; }
     }
-    public double Value { 
-        get{ return _value; }
-        set
-        {
-            if(value <= 0)
-            {
-                _value = 1;
-            }
-            else
-            {
-                _value = value;
-            }
-        }
+
+    /// <summary>
+    /// Returns the weight of the item, default is 1
+    /// </summary>
+    public int Weight
+    {
+        get => _weight;
+        set => _weight = value > 0 ? value : 1;
+    }
+
+    /// <summary>
+    /// Returns the value of the item, default is 1
+    /// </summary>
+    public int Value
+    {
+        get => _value;
+        set => _value = value > 0 ? value : 1;
     }
     #endregion
 

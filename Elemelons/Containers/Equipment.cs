@@ -18,7 +18,9 @@ public class Equipment : Item
     #endregion
 
     #region Constructor
-    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense, string description, int weight, int value, int durability, int maxDurability, string rarity) 
+    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense,
+                     string description, int weight, int value,
+                     int durability = 100, int maxDurability = 100, string rarity = "Common") 
         :base(description, weight, value)
     {
         Type = type;
@@ -38,91 +40,39 @@ public class Equipment : Item
         get{ return _type; }
         set{ _type = value;} 
     }
-    public double Attack { 
-        get{ return _attack; }
-        set
-        {
-            if (value < 0)
-            {
-                _attack = 0.0;
-            }
-            else
-            {
-                _attack = value;
-            }
-        }
+    public double Attack
+    {
+        get => _attack;
+        set => _attack = Math.Max(0, value);
     }
-    public double MagicAttack { 
-        get{ return _magicAttack; }
-        set
-        {
-            if (value < 0)
-            {
-                _magicAttack = 0.0;
-            }
-            else
-            {
-                _magicAttack = value;
-            }
-        }
+    public double MagicAttack
+    {
+        get => _magicAttack;
+        set => _magicAttack = Math.Max(0, value);
     }
-    public double Defense { 
-        get{ return _defense; }
-        set
-        {
-            if(value < 0)
-            {
-                _defense = 0.0;
-            }
-            else
-            {
-                _defense = value;
-            }
-        }
+    public double Defense
+    {
+        get => _defense;
+        set => _defense = Math.Max(0, value);
     }
-    public double MagicDefense { 
-        get{ return _magicDefense; }
-        set
-        {
-            if (value < 0)
-            {
-                _magicDefense = 0.0;
-            }
-            else
-            {
-                _magicDefense = value;
-            }
-        }
+    public double MagicDefense
+    {
+        get => _magicDefense;
+        set => _magicDefense = Math.Max(0, value);
     }
     public string Rarity {
         get{ return _rarity; }
         set{ _rarity = value;}
     }
-    public int Durability {
-        get{ return _durability; }
-        set{ 
-            if (value > _maxDurability)
-            {
-                _durability = _maxDurability;
-            }
-            else
-            {
-                _durability = value; 
-            }
-        }
+    public int Durability
+    {
+        get => _durability;
+        set => _durability = Math.Min(value, MaxDurability);
     }
-    public int MaxDurability {
-        get{ return _maxDurability;}
-        set{
-            if (value < 1)
-            {
-                _maxDurability = 100;
-            }
-            else
-            {
-                _maxDurability = value;
-            }
-        }
+    public int MaxDurability
+    {
+        get => _maxDurability;
+        set => _maxDurability = Math.Max(1, value);
     }
     #endregion
 

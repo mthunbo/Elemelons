@@ -11,20 +11,12 @@ public class Inventory : Container
     }
     
     #region Fields
-    private Dictionary<string, Equipment> _equipment = new Dictionary<string, Equipment>();
     private double _armorValue;
+    private double _mgcArmorValue;
     private double _weaponDmg;
+    private double _mgcWeaponDmg;
     #endregion
 
-    #region Properties
-    /// <summary>
-    /// Returns all equipment in the inventory
-    /// </summary>
-    public List<Equipment> Equipment
-    {
-        get { return _equipment.Values.ToList(); }
-    }
-    #endregion
 
     #region Methods
     /// <summary>
@@ -37,6 +29,17 @@ public class Inventory : Container
             _armorValue += item.Value.Attack;
         }
         return _armorValue;
+    }
+    /// <summary>
+    /// Returns the magic armor value of the equipment in the inventory
+    /// </summary>
+    public double MgcArmorValue()
+    {
+        foreach (var item in _equipment)
+        {
+            _mgcArmorValue += item.Value.MagicDefense;            
+        }
+        return _mgcArmorValue;
     }
 
     /// <summary>
@@ -52,9 +55,21 @@ public class Inventory : Container
     }
 
     /// <summary>
+    /// Returns the magic weapon damage of the weapons in the inventory
+    /// </summary>
+    public double MgcWeaponDmg()
+    {
+        foreach (var item in _equipment)
+        {
+            _mgcWeaponDmg += item.Value.MagicAttack;
+        }
+        return _mgcWeaponDmg;
+    }
+
+    /// <summary>
     /// Equips the given equipment if there isnt already one equipped of that type
     /// </summary>
-    public void AddEquipment(Equipment equipment)
+    public override void AddEquipment(Equipment equipment)
     {
         if (_equipment.ContainsKey(equipment.Type))
         {

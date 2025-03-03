@@ -31,3 +31,4 @@ d:\Repos\Elemelons\Elemelons\obj\Debug\net9.0\ref\Elemelons.dll
 D:\Repos\Elemelons\Elemelons\bin\Debug\net9.0\Spectre.Console.dll
 D:\Repos\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.csproj.AssemblyReference.cache
 D:\Repos\Elemelons\Elemelons\obj\Debug\net9.0\Elemelons.csproj.Up2Date
+D:\Repos\Elemelons\Elemelons\bin\Debug\net9.0\Newtonsoft.Json.dll

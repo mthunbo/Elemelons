@@ -7,19 +7,27 @@
 public class Item
 {
     #region Fields
+    private string _name = "";
     private string _description ="";
     private int _weight = 1;
     private int _value = 1;
     #endregion
 
-    public Item(string description, int weight = 1, int value = 1)
+    public Item(string name, string description, int weight = 1, int value = 1)
     {
+        Name = name;
         Description = description;
         Weight = weight;
         Value = value;
     }
 
+
     #region Properties
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
     /// <summary>
     /// Returns a description of the item
     /// </summary>
@@ -50,6 +58,6 @@ public class Item
 
     public override string ToString()
     {
-        return $"{Description} : weight {Weight}, worth {Value}";
+        return $"{Name} : {Description} : {Weight} Kg : worth {Value} Gold";
     }
 }

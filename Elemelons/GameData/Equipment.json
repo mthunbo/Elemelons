@@ -1,0 +1,167 @@
+{
+  "Head": [
+    {
+      "Type": "Helmet",
+      "Attack": 0,
+      "MagicAttack": 0,
+      "Defense": 5,
+      "MagicDefense": 3,
+      "Description": "Dragon Knight's Visage",
+      "Weight": 5,
+      "Value": 50,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Rare"
+    }
+  ],
+  "Shoulders": [
+    {
+      "Type": "Pauldrons",
+      "Attack": 0,
+      "MagicAttack": 0,
+      "Defense": 7,
+      "MagicDefense": 4,
+      "Description": "Guardian's Shoulder Plates",
+      "Weight": 6,
+      "Value": 60,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Epic"
+    }
+  ],
+  "Chest": [
+    {
+      "Type": "Breastplate",
+      "Attack": 0,
+      "MagicAttack": 0,
+      "Defense": 12,
+      "MagicDefense": 6,
+      "Description": "Titanium Warplate",
+      "Weight": 15,
+      "Value": 120,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Legendary"
+    }
+  ],
+  "Wrist": [
+    {
+      "Type": "Bracers",
+      "Attack": 0,
+      "MagicAttack": 0,
+      "Defense": 4,
+      "MagicDefense": 2,
+      "Description": "Runed Wristguards",
+      "Weight": 2,
+      "Value": 30,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Uncommon"
+    }
+  ],
+  "Hands": [
+    {
+      "Type": "Gauntlets",
+      "Attack": 1,
+      "MagicAttack": 0,
+      "Defense": 6,
+      "MagicDefense": 3,
+      "Description": "Crushfist Gauntlets",
+      "Weight": 4,
+      "Value": 40,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Rare"
+    }
+  ],
+  "Waist": [
+    {
+      "Type": "Belt",
+      "Attack": 0,
+      "MagicAttack": 1,
+      "Defense": 5,
+      "MagicDefense": 5,
+      "Description": "Sash of Arcane Flow",
+      "Weight": 3,
+      "Value": 35,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Epic"
+    }
+  ],
+  "Legs": [
+    {
+      "Type": "Greaves",
+      "Attack": 0,
+      "MagicAttack": 0,
+      "Defense": 10,
+      "MagicDefense": 5,
+      "Description": "Stormforged Greaves",
+      "Weight": 12,
+      "Value": 100,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Legendary"
+    }
+  ],
+  "Feet": [
+    {
+      "Type": "Boots",
+      "Attack": 0,
+      "MagicAttack": 0,
+      "Defense": 6,
+      "MagicDefense": 4,
+      "Description": "Phantom Step Boots",
+      "Weight": 5,
+      "Value": 55,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Rare"
+    }
+  ],
+  "Back": [
+    {
+      "Type": "Cloak",
+      "Attack": 0,
+      "MagicAttack": 2,
+      "Defense": 3,
+      "MagicDefense": 7,
+      "Description": "Shadowveil Cloak",
+      "Weight": 4,
+      "Value": 80,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Epic"
+    }
+  ],
+  "Main-Hand": [
+    {
+      "Type": "Sword",
+      "Attack": 20,
+      "MagicAttack": 5,
+      "Defense": 0,
+      "MagicDefense": 0,
+      "Description": "Excalibur, Blade of Kings",
+      "Weight": 10,
+      "Value": 300,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Legendary"
+    }
+  ],
+  "Off-Hand": [
+    {
+      "Type": "Shield",
+      "Attack": 0,
+      "MagicAttack": 0,
+      "Defense": 15,
+      "MagicDefense": 8,
+      "Description": "Aegis of Valor",
+      "Weight": 12,
+      "Value": 200,
+      "Durability": 100,
+      "MaxDurability": 100,
+      "Rarity": "Legendary"
+    }
+  ]
+}

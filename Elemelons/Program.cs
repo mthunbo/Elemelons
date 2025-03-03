@@ -5,6 +5,11 @@ using System.Threading;
 using Spectre.Console;
 
 
+
+Chest treasureChest = new Chest { MaxValue = 300 };
+EquipmentFactory.FillChestWithEquipment("D:\\Repos\\Elemelons\\Elemelons\\GameData\\Equipment.json", treasureChest);
+treasureChest.PrintContent();
+
 var table = new Table()
     .AddColumn("Testing")
     .AddColumn("Testing 2")
@@ -16,6 +21,8 @@ var table = new Table()
 table.Columns[1].Centered();
 
 AnsiConsole.Write(table);
+
+
 
 // var testMelon = new FireMelon("Bames Jond");
 // var testing = new Equipment("Helmet", 0, 0, 2, 2, "Dragon knights Visage", 5, 50);

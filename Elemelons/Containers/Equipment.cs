@@ -18,10 +18,10 @@ public class Equipment : Item
     #endregion
 
     #region Constructor
-    public Equipment(string type, double attack, double magicAttack, double defense, double magicDefense,
+    public Equipment(string name, string type, double attack, double magicAttack, double defense, double magicDefense,
                      string description, int weight, int value,
                      int durability = 100, int maxDurability = 100, string rarity = "Common") 
-        :base(description, weight, value)
+        :base(name, description, weight, value)
     {
         Type = type;
         Attack = attack;

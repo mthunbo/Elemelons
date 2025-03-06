@@ -9,9 +9,9 @@ public class Chest :Container
     #endregion
 
     #region Constructors
-    public Chest() : base("Chest")
+    public Chest(int maxValue) : base("Chest")
     {
-        _maxValue = MaxValue;
+        MaxValue = maxValue;
     }
     #endregion
 

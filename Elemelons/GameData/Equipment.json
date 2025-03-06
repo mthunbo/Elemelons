@@ -1,167 +1,782 @@
 {
-  "Head": [
-    {
-      "Type": "Helmet",
-      "Attack": 0,
-      "MagicAttack": 0,
-      "Defense": 5,
-      "MagicDefense": 3,
-      "Description": "Dragon Knight's Visage",
-      "Weight": 5,
-      "Value": 50,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Rare"
-    }
-  ],
-  "Shoulders": [
-    {
-      "Type": "Pauldrons",
-      "Attack": 0,
-      "MagicAttack": 0,
-      "Defense": 7,
-      "MagicDefense": 4,
-      "Description": "Guardian's Shoulder Plates",
-      "Weight": 6,
-      "Value": 60,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Epic"
-    }
-  ],
-  "Chest": [
-    {
-      "Type": "Breastplate",
-      "Attack": 0,
-      "MagicAttack": 0,
-      "Defense": 12,
-      "MagicDefense": 6,
-      "Description": "Titanium Warplate",
-      "Weight": 15,
-      "Value": 120,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Legendary"
-    }
-  ],
-  "Wrist": [
-    {
-      "Type": "Bracers",
-      "Attack": 0,
-      "MagicAttack": 0,
-      "Defense": 4,
-      "MagicDefense": 2,
-      "Description": "Runed Wristguards",
-      "Weight": 2,
-      "Value": 30,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Uncommon"
-    }
-  ],
-  "Hands": [
-    {
-      "Type": "Gauntlets",
-      "Attack": 1,
-      "MagicAttack": 0,
-      "Defense": 6,
-      "MagicDefense": 3,
-      "Description": "Crushfist Gauntlets",
-      "Weight": 4,
-      "Value": 40,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Rare"
-    }
-  ],
-  "Waist": [
-    {
-      "Type": "Belt",
-      "Attack": 0,
-      "MagicAttack": 1,
-      "Defense": 5,
-      "MagicDefense": 5,
-      "Description": "Sash of Arcane Flow",
-      "Weight": 3,
-      "Value": 35,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Epic"
-    }
-  ],
-  "Legs": [
-    {
-      "Type": "Greaves",
-      "Attack": 0,
-      "MagicAttack": 0,
-      "Defense": 10,
-      "MagicDefense": 5,
-      "Description": "Stormforged Greaves",
-      "Weight": 12,
-      "Value": 100,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Legendary"
-    }
-  ],
-  "Feet": [
-    {
-      "Type": "Boots",
-      "Attack": 0,
-      "MagicAttack": 0,
-      "Defense": 6,
-      "MagicDefense": 4,
-      "Description": "Phantom Step Boots",
-      "Weight": 5,
-      "Value": 55,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Rare"
-    }
-  ],
-  "Back": [
-    {
-      "Type": "Cloak",
-      "Attack": 0,
-      "MagicAttack": 2,
-      "Defense": 3,
-      "MagicDefense": 7,
-      "Description": "Shadowveil Cloak",
-      "Weight": 4,
-      "Value": 80,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Epic"
-    }
-  ],
-  "Main-Hand": [
-    {
-      "Type": "Sword",
-      "Attack": 20,
-      "MagicAttack": 5,
-      "Defense": 0,
-      "MagicDefense": 0,
-      "Description": "Excalibur, Blade of Kings",
-      "Weight": 10,
-      "Value": 300,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Legendary"
-    }
-  ],
-  "Off-Hand": [
-    {
-      "Type": "Shield",
-      "Attack": 0,
-      "MagicAttack": 0,
-      "Defense": 15,
-      "MagicDefense": 8,
-      "Description": "Aegis of Valor",
-      "Weight": 12,
-      "Value": 200,
-      "Durability": 100,
-      "MaxDurability": 100,
-      "Rarity": "Legendary"
-    }
-  ]
+  "Common": {
+    "Head": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Worn Leather Cap",
+        "Description": "A simple cap made of worn leather.",
+        "Weight": 2,
+        "Value": 10,
+        "Durability": 50,
+        "MaxDurability": 50
+      }
+    ],
+    "Shoulders": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Basic Shoulder Guards",
+        "Description": "Lightweight metal guards for the shoulders.",
+        "Weight": 4,
+        "Value": 15,
+        "Durability": 55,
+        "MaxDurability": 55
+      }
+    ],
+    "Cloak": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 1,
+        "MagicDefense": 2,
+        "Name": "Tattered Cloak",
+        "Description": "A thin, old cloak with a few holes.",
+        "Weight": 3,
+        "Value": 8,
+        "Durability": 40,
+        "MaxDurability": 40
+      }
+    ],
+    "Chest": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 5,
+        "MagicDefense": 2,
+        "Name": "Simple Leather Vest",
+        "Description": "A vest made of basic leather, offers some protection.",
+        "Weight": 6,
+        "Value": 20,
+        "Durability": 60,
+        "MaxDurability": 60
+      }
+    ],
+    "Wrists": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Cloth Wristbands",
+        "Description": "Thin cloth bands wrapped around the wrists.",
+        "Weight": 1,
+        "Value": 5,
+        "Durability": 30,
+        "MaxDurability": 30
+      }
+    ],
+    "Hands": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Fingerless Gloves",
+        "Description": "Leather gloves with exposed fingertips.",
+        "Weight": 2,
+        "Value": 10,
+        "Durability": 45,
+        "MaxDurability": 45
+      }
+    ],
+    "Waist": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Rope Belt",
+        "Description": "A simple rope used as a belt.",
+        "Weight": 1,
+        "Value": 5,
+        "Durability": 35,
+        "MaxDurability": 35
+      }
+    ],
+    "Legs": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 4,
+        "MagicDefense": 2,
+        "Name": "Ragged Trousers",
+        "Description": "Torn trousers that offer little protection.",
+        "Weight": 4,
+        "Value": 12,
+        "Durability": 50,
+        "MaxDurability": 50
+      }
+    ],
+    "Feet": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Worn Boots",
+        "Description": "Old leather boots with scuffed soles.",
+        "Weight": 3,
+        "Value": 10,
+        "Durability": 40,
+        "MaxDurability": 40
+      }
+    ],
+    "Main-hand": [
+      {
+        "Attack": 5,
+        "MagicAttack": 0,
+        "Defense": 0,
+        "MagicDefense": 0,
+        "Name": "Rusty Sword",
+        "Description": "A dull, rusted sword.",
+        "Weight": 8,
+        "Value": 25,
+        "Durability": 60,
+        "MaxDurability": 60
+      }
+    ],
+    "Off-hand": [
+      {
+        "Attack": 0,
+        "MagicAttack": 2,
+        "Defense": 1,
+        "MagicDefense": 3,
+        "Name": "Wooden Buckler",
+        "Description": "A small wooden shield.",
+        "Weight": 5,
+        "Value": 18,
+        "Durability": 50,
+        "MaxDurability": 50
+      }
+    ]
+  },
+  "Uncommon": {
+    "Head": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Iron Helm",
+        "Description": "A sturdy iron helmet.",
+        "Weight": 5,
+        "Value": 40,
+        "Durability": 70,
+        "MaxDurability": 70
+      }
+    ],
+    "Shoulders": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Reinforced Shoulder Guards",
+        "Description": "Iron-plated shoulder guards for better protection.",
+        "Weight": 6,
+        "Value": 50,
+        "Durability": 75,
+        "MaxDurability": 75
+      }
+    ],
+    "Cloak": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 1,
+        "MagicDefense": 2,
+        "Name": "Silken Cloak",
+        "Description": "A finely woven cloak that offers some magic resistance.",
+        "Weight": 4,
+        "Value": 35,
+        "Durability": 65,
+        "MaxDurability": 65
+      }
+    ],
+    "Chest": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 5,
+        "MagicDefense": 2,
+        "Name": "Hardened Leather Vest",
+        "Description": "A well-made leather vest reinforced with metal plates.",
+        "Weight": 8,
+        "Value": 60,
+        "Durability": 80,
+        "MaxDurability": 80
+      }
+    ],
+    "Wrists": [
+      {
+        "Attack": 0,
+        "MagicAttack": 1,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Runed Bracers",
+        "Description": "Bracers adorned with minor enchantments for protection.",
+        "Weight": 2,
+        "Value": 45,
+        "Durability": 70,
+        "MaxDurability": 70
+      }
+    ],
+    "Hands": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Reinforced Gloves",
+        "Description": "Gloves with steel plates on the knuckles.",
+        "Weight": 3,
+        "Value": 40,
+        "Durability": 75,
+        "MaxDurability": 75
+      }
+    ],
+    "Waist": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Studded Belt",
+        "Description": "A thick leather belt lined with iron studs.",
+        "Weight": 2,
+        "Value": 38,
+        "Durability": 65,
+        "MaxDurability": 65
+      }
+    ],
+    "Legs": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Reinforced Leather Leggings",
+        "Description": "Leg armor crafted from durable leather and metal plates.",
+        "Weight": 7,
+        "Value": 55,
+        "Durability": 80,
+        "MaxDurability": 80
+      }
+    ],
+    "Feet": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Iron-Toed Boots",
+        "Description": "Leather boots reinforced with iron at the toes.",
+        "Weight": 5,
+        "Value": 50,
+        "Durability": 75,
+        "MaxDurability": 75
+      }
+    ],
+    "Main-hand": [
+      {
+        "Attack": 5,
+        "MagicAttack": 0,
+        "Defense": 0,
+        "MagicDefense": 0,
+        "Name": "Tempered Longsword",
+        "Description": "A sharp, well-balanced sword for battle.",
+        "Weight": 10,
+        "Value": 85,
+        "Durability": 90,
+        "MaxDurability": 90
+      }
+    ],
+    "Off-hand": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Reinforced Wooden Shield",
+        "Description": "A strong wooden shield reinforced with metal bands.",
+        "Weight": 8,
+        "Value": 65,
+        "Durability": 85,
+        "MaxDurability": 85
+      }
+    ]
+  },
+  "Rare": {
+    "Head": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Steel Helmet",
+        "Description": "A helmet made of high-quality steel.",
+        "Weight": 6,
+        "Value": 80,
+        "Durability": 90,
+        "MaxDurability": 90
+      }
+    ],
+    "Shoulders": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Enchanted Shoulder Guards",
+        "Description": "Steel shoulder guards imbued with minor magic.",
+        "Weight": 7,
+        "Value": 90,
+        "Durability": 95,
+        "MaxDurability": 95
+      }
+    ],
+    "Cloak": [
+      {
+        "Attack": 0,
+        "MagicAttack": 2,
+        "Defense": 4,
+        "MagicDefense": 6,
+        "Name": "Mystic Cloak",
+        "Description": "A cloak woven with enchanted threads for magic resistance.",
+        "Weight": 5,
+        "Value": 85,
+        "Durability": 85,
+        "MaxDurability": 85
+      }
+    ],
+    "Chest": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 5,
+        "MagicDefense": 2,
+        "Name": "Steel-Plated Chestguard",
+        "Description": "A durable steel-plated chestpiece providing excellent protection.",
+        "Weight": 12,
+        "Value": 110,
+        "Durability": 100,
+        "MaxDurability": 100
+      }
+    ],
+    "Wrists": [
+      {
+        "Attack": 0,
+        "MagicAttack": 2,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Arcane Bracers",
+        "Description": "Bracers inscribed with runes that enhance magic power.",
+        "Weight": 3,
+        "Value": 95,
+        "Durability": 90,
+        "MaxDurability": 90
+      }
+    ],
+    "Hands": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Gauntlets of Precision",
+        "Description": "Steel gauntlets crafted for superior grip and control.",
+        "Weight": 4,
+        "Value": 85,
+        "Durability": 95,
+        "MaxDurability": 95
+      }
+    ],
+    "Waist": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Battle-Hardened Belt",
+        "Description": "A thick leather belt reinforced with steel plates.",
+        "Weight": 3,
+        "Value": 80,
+        "Durability": 85,
+        "MaxDurability": 85
+      }
+    ],
+    "Legs": [
+      {
+        "Attack": 0,
+        "MagicAttack": 1,
+        "Defense": 4,
+        "MagicDefense": 2,
+        "Name": "Enchanted Greaves",
+        "Description": "Leg armor reinforced with protective enchantments.",
+        "Weight": 9,
+        "Value": 105,
+        "Durability": 100,
+        "MaxDurability": 100
+      }
+    ],
+    "Feet": [
+      {
+        "Attack": 0,
+        "MagicAttack": 1,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Runed Boots",
+        "Description": "Boots that provide enhanced movement and slight magical resistance.",
+        "Weight": 6,
+        "Value": 95,
+        "Durability": 95,
+        "MaxDurability": 95
+      }
+    ],
+    "Main-hand": [
+      {
+        "Attack": 5,
+        "MagicAttack": 0,
+        "Defense": 0,
+        "MagicDefense": 0,
+        "Name": "Forged Battleaxe",
+        "Description": "A finely crafted battleaxe made for warriors.",
+        "Weight": 14,
+        "Value": 150,
+        "Durability": 110,
+        "MaxDurability": 110
+      }
+    ],
+    "Off-hand": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 1,
+        "MagicDefense": 3,
+        "Name": "Spellcaster's Shield",
+        "Description": "A shield infused with protective enchantments against magic.",
+        "Weight": 10,
+        "Value": 120,
+        "Durability": 105,
+        "MaxDurability": 105
+      }
+    ]
+  },
+  "Epic": {
+    "Head": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Valkyrie's Helm",
+        "Description": "A majestic helmet worn by the Valkyries, granting both defense and magic protection.",
+        "Weight": 8,
+        "Value": 180,
+        "Durability": 120,
+        "MaxDurability": 120
+      }
+    ],
+    "Shoulders": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Wings of the Fallen",
+        "Description": "Steel shoulder guards with wings, imbued with magic to provide supreme defense.",
+        "Weight": 9,
+        "Value": 200,
+        "Durability": 130,
+        "MaxDurability": 130
+      }
+    ],
+    "Cloak": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 1,
+        "MagicDefense": 3,
+        "Name": "Cloak of the Archmage",
+        "Description": "A powerful cloak that enhances magic resistance and protects against dark forces.",
+        "Weight": 6,
+        "Value": 190,
+        "Durability": 115,
+        "MaxDurability": 115
+      }
+    ],
+    "Chest": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 6,
+        "MagicDefense": 3,
+        "Name": "Dragonbone Chestplate",
+        "Description": "A chestplate forged from the bones of ancient dragons, offering unmatched defense.",
+        "Weight": 15,
+        "Value": 250,
+        "Durability": 140,
+        "MaxDurability": 140
+      }
+    ],
+    "Wrists": [
+      {
+        "Attack": 0,
+        "MagicAttack": 2,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Runed Armlets",
+        "Description": "Armlets inscribed with powerful runes, increasing magical potency and physical defense.",
+        "Weight": 4,
+        "Value": 180,
+        "Durability": 120,
+        "MaxDurability": 120
+      }
+    ],
+    "Hands": [
+      {
+        "Attack": 0,
+        "MagicAttack": 3,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Gloves of the Sorcerer",
+        "Description": "Gloves crafted to enhance a sorcerer's control over magical energies.",
+        "Weight": 5,
+        "Value": 170,
+        "Durability": 130,
+        "MaxDurability": 130
+      }
+    ],
+    "Waist": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Belt of the Titans",
+        "Description": "A thick leather belt with titan-forged steel, providing exceptional protection.",
+        "Weight": 6,
+        "Value": 160,
+        "Durability": 120,
+        "MaxDurability": 120
+      }
+    ],
+    "Legs": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 4,
+        "MagicDefense": 3,
+        "Name": "Leggings of the Night Watch",
+        "Description": "Enchanted leggings offering agility and protection against both physical and magical attacks.",
+        "Weight": 10,
+        "Value": 190,
+        "Durability": 130,
+        "MaxDurability": 130
+      }
+    ],
+    "Feet": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Boots of the Phantom",
+        "Description": "Boots that allow the wearer to move silently while providing resistance to magic.",
+        "Weight": 7,
+        "Value": 160,
+        "Durability": 125,
+        "MaxDurability": 125
+      }
+    ],
+    "Main-hand": [
+      {
+        "Attack": 5,
+        "MagicAttack": 4,
+        "Defense": 0,
+        "MagicDefense": 0,
+        "Name": "Blazebringer",
+        "Description": "A legendary sword forged in the heart of a dying star, its blade burns with an eternal flame that sears through armor and darkness alike.",
+        "Weight": 18,
+        "Value": 300,
+        "Durability": 150,
+        "MaxDurability": 150
+      }
+    ],
+    "Off-hand": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 4,
+        "Name": "Aegis of the Protector",
+        "Description": "A magical shield that absorbs both physical and magical attacks, protecting the wearer.",
+        "Weight": 12,
+        "Value": 250,
+        "Durability": 140,
+        "MaxDurability": 140
+      }
+    ]
+  },
+  "Legendary": {
+    "Head": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 2,
+        "Name": "Crown of the Ancients",
+        "Description": "A crown worn by legendary heroes, said to contain the wisdom of the ages.",
+        "Weight": 5,
+        "Value": 300,
+        "Durability": 150,
+        "MaxDurability": 150
+      }
+    ],
+    "Shoulders": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 4,
+        "MagicDefense": 2,
+        "Name": "Wings of the Eternal Seraph",
+        "Description": "Divine shoulder guards said to be imbued with the power of celestial beings.",
+        "Weight": 10,
+        "Value": 350,
+        "Durability": 180,
+        "MaxDurability": 180
+      }
+    ],
+    "Cloak": [
+      {
+        "Attack": 0,
+        "MagicAttack": 8,
+        "Defense": 2,
+        "MagicDefense": 4,
+        "Name": "Veil of the Void Walker",
+        "Description": "A cloak that bends reality itself, offering unmatched magical protection.",
+        "Weight": 7,
+        "Value": 320,
+        "Durability": 160,
+        "MaxDurability": 160
+      }
+    ],
+    "Chest": [
+      {
+        "Attack": 5,
+        "MagicAttack": 3,
+        "Defense": 6,
+        "MagicDefense": 3,
+        "Name": "Armor of the Immortal Titan",
+        "Description": "A massive armor made from the unbreakable metal of ancient titans.",
+        "Weight": 25,
+        "Value": 450,
+        "Durability": 200,
+        "MaxDurability": 200
+      }
+    ],
+    "Wrists": [
+      {
+        "Attack": 3,
+        "MagicAttack": 3,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Bracers of the Infinite Soul",
+        "Description": "Bracers that channel the wearer's soul energy, providing immense power.",
+        "Weight": 5,
+        "Value": 400,
+        "Durability": 175,
+        "MaxDurability": 175
+      }
+    ],
+    "Hands": [
+      {
+        "Attack": 2,
+        "MagicAttack": 2,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Gloves of the Eternal Mage",
+        "Description": "Gloves that enhance both magical and physical control.",
+        "Weight": 6,
+        "Value": 375,
+        "Durability": 180,
+        "MaxDurability": 180
+      }
+    ],
+    "Waist": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Belt of the God King",
+        "Description": "A legendary belt with divine protection and immense strength.",
+        "Weight": 8,
+        "Value": 320,
+        "Durability": 170,
+        "MaxDurability": 170
+      }
+    ],
+    "Legs": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 4,
+        "MagicDefense": 2,
+        "Name": "Leggings of the Celestial Champion",
+        "Description": "Leggings forged by celestial beings, granting extraordinary agility and defense.",
+        "Weight": 12,
+        "Value": 380,
+        "Durability": 190,
+        "MaxDurability": 190
+      }
+    ],
+    "Feet": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Boots of the Divine Herald",
+        "Description": "Boots that allow the wearer to move at impossible speeds while providing heavenly protection.",
+        "Weight": 8,
+        "Value": 350,
+        "Durability": 185,
+        "MaxDurability": 185
+      }
+    ],
+    "Main-hand": [
+      {
+        "Attack": 6,
+        "MagicAttack": 6,
+        "Defense": 0,
+        "MagicDefense": 0,
+        "Name": "Excalibur, Blade of Kings",
+        "Description": "The legendary sword of kings, imbued with the power of the gods.",
+        "Weight": 20,
+        "Value": 500,
+        "Durability": 250,
+        "MaxDurability": 250
+      }
+    ],
+    "Off-hand": [
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 4,
+        "MagicDefense": 4,
+        "Name": "Shield of the Immortal Phoenix",
+        "Description": "A shield that can withstand the fury of any element, said to be unbreakable.",
+        "Weight": 15,
+        "Value": 450,
+        "Durability": 230,
+        "MaxDurability": 230
+      }
+    ]
+  }
 }

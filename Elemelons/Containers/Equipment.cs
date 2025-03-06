@@ -100,6 +100,7 @@ public class Equipment : Item
     public override string ToString()
     {
         return @$"
+        {Name}
         {Description}
         {Rarity} {Type}
         Weight {Weight} Kg

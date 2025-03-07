@@ -5,7 +5,7 @@ using Spectre.Console;
 string filePath = "D:\\Repos\\Elemelons\\Elemelons\\GameData\\Equipment.json";
 EquipmentFactory.LoadEquipmentData(filePath);
 
-Chest myChest = new Chest(500);
+Chest myChest = new Chest(500000);
 EquipmentFactory.FillChestWithEquipment(myChest);
 
 myChest.PrintContent();

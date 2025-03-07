@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Elemelons")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de7db7b9bea564057b4a341442a6cd9fd5206fc5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56129911020c96e0191674947e2df78c491ac6ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Elemelons")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Elemelons")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

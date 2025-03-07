@@ -12,6 +12,18 @@
         "Value": 10,
         "Durability": 50,
         "MaxDurability": 50
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Traveler's Cap",
+        "Description": "A rugged cap worn by adventurers on long journeys.",
+        "Weight": 2,
+        "Value": 10,
+        "Durability": 50,
+        "MaxDurability": 50
       }
     ],
     "Shoulders": [
@@ -26,6 +38,18 @@
         "Value": 15,
         "Durability": 55,
         "MaxDurability": 55
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 2,
+        "Name": "Nomad's Pauldrons",
+        "Description": "Lightweight shoulder guards crafted from reinforced hide.",
+        "Weight": 4,
+        "Value": 15,
+        "Durability": 55,
+        "MaxDurability": 55
       }
     ],
     "Cloak": [
@@ -33,9 +57,21 @@
         "Attack": 0,
         "MagicAttack": 0,
         "Defense": 1,
-        "MagicDefense": 2,
+        "MagicDefense": 1,
         "Name": "Tattered Cloak",
         "Description": "A thin, old cloak with a few holes.",
+        "Weight": 3,
+        "Value": 8,
+        "Durability": 40,
+        "MaxDurability": 40
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 1,
+        "MagicDefense": 3,
+        "Name": "Shadowveil Cloak",
+        "Description": "A dark, tattered cloak that offers mild resistance to magic.",
         "Weight": 3,
         "Value": 8,
         "Durability": 40,
@@ -54,6 +90,18 @@
         "Value": 20,
         "Durability": 60,
         "MaxDurability": 60
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 4,
+        "MagicDefense": 2,
+        "Name": "Rugged Hide Vest",
+        "Description": "A tough leather vest, built to withstand minor impacts.",
+        "Weight": 6,
+        "Value": 20,
+        "Durability": 60,
+        "MaxDurability": 60
       }
     ],
     "Wrists": [
@@ -68,16 +116,40 @@
         "Value": 5,
         "Durability": 30,
         "MaxDurability": 30
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Wanderer's Bracers",
+        "Description": "Simple bracers worn by travelers seeking protection.",
+        "Weight": 1,
+        "Value": 5,
+        "Durability": 30,
+        "MaxDurability": 30
       }
     ],
     "Hands": [
       {
         "Attack": 0,
         "MagicAttack": 0,
-        "Defense": 3,
+        "Defense": 2,
         "MagicDefense": 1,
         "Name": "Fingerless Gloves",
         "Description": "Leather gloves with exposed fingertips.",
+        "Weight": 2,
+        "Value": 10,
+        "Durability": 45,
+        "MaxDurability": 45
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 1,
+        "MagicDefense": 1,
+        "Name": "Tattered Handwraps",
+        "Description": "Cloth wraps that provide minimal protection but great dexterity.",
         "Weight": 2,
         "Value": 10,
         "Durability": 45,
@@ -96,6 +168,18 @@
         "Value": 5,
         "Durability": 35,
         "MaxDurability": 35
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Hunter’s Belt",
+        "Description": "A sturdy leather belt designed for carrying small tools.",
+        "Weight": 1,
+        "Value": 5,
+        "Durability": 35,
+        "MaxDurability": 35
       }
     ],
     "Legs": [
@@ -106,6 +190,18 @@
         "MagicDefense": 2,
         "Name": "Ragged Trousers",
         "Description": "Torn trousers that offer little protection.",
+        "Weight": 4,
+        "Value": 12,
+        "Durability": 50,
+        "MaxDurability": 50
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 5,
+        "MagicDefense": 2,
+        "Name": "Pathfinder’s Trousers",
+        "Description": "Durable trousers designed for long treks across rough terrain.",
         "Weight": 4,
         "Value": 12,
         "Durability": 50,
@@ -124,11 +220,23 @@
         "Value": 10,
         "Durability": 40,
         "MaxDurability": 40
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Dustwalker Boots",
+        "Description": "Worn boots that still offer decent traction and protection.",
+        "Weight": 3,
+        "Value": 10,
+        "Durability": 40,
+        "MaxDurability": 40
       }
     ],
     "Main-hand": [
       {
-        "Attack": 5,
+        "Attack": 4,
         "MagicAttack": 0,
         "Defense": 0,
         "MagicDefense": 0,
@@ -138,16 +246,40 @@
         "Value": 25,
         "Durability": 60,
         "MaxDurability": 60
+      },
+      {
+        "Attack": 5,
+        "MagicAttack": 0,
+        "Defense": 0,
+        "MagicDefense": 0,
+        "Name": "Weathered Shortsword",
+        "Description": "A short, slightly worn blade still sharp enough for combat.",
+        "Weight": 8,
+        "Value": 25,
+        "Durability": 60,
+        "MaxDurability": 60
       }
     ],
     "Off-hand": [
       {
         "Attack": 0,
-        "MagicAttack": 2,
+        "MagicAttack": 0,
         "Defense": 1,
-        "MagicDefense": 3,
+        "MagicDefense": 1,
         "Name": "Wooden Buckler",
         "Description": "A small wooden shield.",
+        "Weight": 5,
+        "Value": 18,
+        "Durability": 50,
+        "MaxDurability": 50
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 2,
+        "Name": "Buckler of the Wayfarer",
+        "Description": "A small shield crafted from sturdy wood, reinforced with iron bands.",
         "Weight": 5,
         "Value": 18,
         "Durability": 50,
@@ -636,6 +768,30 @@
         "Value": 300,
         "Durability": 150,
         "MaxDurability": 150
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 4,
+        "Name": "Crown of the Abyss",
+        "Description": "The void does not grant wisdom. It takes it and replaces it with something far greater—understanding.",
+        "Weight": 5,
+        "Value": 500,
+        "Durability": 200,
+        "MaxDurability": 200
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Crown of Everlasting Grace",
+        "Description": "A delicate tiara woven from golden light, bestowing wisdom and compassion upon its wearer.",
+        "Weight": 2,
+        "Value": 600,
+        "Durability": 250,
+        "MaxDurability": 250
       }
     ],
     "Shoulders": [
@@ -650,12 +806,36 @@
         "Value": 350,
         "Durability": 180,
         "MaxDurability": 180
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 4,
+        "MagicDefense": 5,
+        "Name": "Shadow Mantle",
+        "Description": "The burden of darkness is heavy, but to those who embrace it, The Abyss will carry them unseen.",
+        "Weight": 6,
+        "Value": 480,
+        "Durability": 190,
+        "MaxDurability": 190
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Mantle of the Dawn",
+        "Description": "A shimmering shawl that glows like the morning sun, shielding the wearer from harm and despair.",
+        "Weight": 3,
+        "Value": 580,
+        "Durability": 240,
+        "MaxDurability": 240
       }
     ],
     "Cloak": [
       {
         "Attack": 0,
-        "MagicAttack": 8,
+        "MagicAttack": 0,
         "Defense": 2,
         "MagicDefense": 4,
         "Name": "Veil of the Void Walker",
@@ -664,12 +844,36 @@
         "Value": 320,
         "Durability": 160,
         "MaxDurability": 160
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 5,
+        "Name": "Veil of the Forgotten",
+        "Description": "Some say those who don this cloak walk between worlds. Others claim they never return at all.",
+        "Weight": 4,
+        "Value": 520,
+        "Durability": 210,
+        "MaxDurability": 210
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 1,
+        "MagicDefense": 2,
+        "Name": "Veil of Luminous Serenity",
+        "Description": "A weightless cloak woven from the softest light, wrapping the wearer in boundless love and protection.",
+        "Weight": 2,
+        "Value": 620,
+        "Durability": 270,
+        "MaxDurability": 270
       }
     ],
     "Chest": [
       {
-        "Attack": 5,
-        "MagicAttack": 3,
+        "Attack": 0,
+        "MagicAttack": 0,
         "Defense": 6,
         "MagicDefense": 3,
         "Name": "Armor of the Immortal Titan",
@@ -678,6 +882,30 @@
         "Value": 450,
         "Durability": 200,
         "MaxDurability": 200
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 5,
+        "MagicDefense": 6,
+        "Name": "Ebonheart Carapace",
+        "Description": "Forged from the essence of pure shadow, this armor does not break—it devours.",
+        "Weight": 12,
+        "Value": 600,
+        "Durability": 250,
+        "MaxDurability": 250
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 5,
+        "MagicDefense": 2,
+        "Name": "Heartwoven Robes",
+        "Description": "An elegant gown of radiant silk, infused with the Princess’s kindness and unwavering spirit.",
+        "Weight": 5,
+        "Value": 700,
+        "Durability": 300,
+        "MaxDurability": 300
       }
     ],
     "Wrists": [
@@ -692,6 +920,30 @@
         "Value": 400,
         "Durability": 175,
         "MaxDurability": 175
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 2,
+        "Name": "Grasp of the Void Queen",
+        "Description": "To be held by the void is to never let go.",
+        "Weight": 3,
+        "Value": 460,
+        "Durability": 180,
+        "MaxDurability": 180
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Bracers of Gentle Embrace",
+        "Description": "Soft yet unyielding, these bracers grant the strength to protect those who cannot protect themselves.",
+        "Weight": 2,
+        "Value": 500,
+        "Durability": 220,
+        "MaxDurability": 220
       }
     ],
     "Hands": [
@@ -706,6 +958,30 @@
         "Value": 375,
         "Durability": 180,
         "MaxDurability": 180
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 2,
+        "Defense": 2,
+        "MagicDefense": 3,
+        "Name": "Gauntlets of Endless Night",
+        "Description": "Darkness is not the absence of light. It is the presence of something much older.",
+        "Weight": 4,
+        "Value": 500,
+        "Durability": 200,
+        "MaxDurability": 200
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Gloves of Healing Touch",
+        "Description": "Blessed with the power of pure love, these gloves allow the wearer to mend wounds with a mere touch.",
+        "Weight": 2,
+        "Value": 620,
+        "Durability": 250,
+        "MaxDurability": 250
       }
     ],
     "Waist": [
@@ -720,6 +996,30 @@
         "Value": 320,
         "Durability": 170,
         "MaxDurability": 170
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 4,
+        "Name": "Girdle of the Abyss Walker",
+        "Description": "Tied together with strands of reality itself, it holds the wearer at the edge of The Abyss.",
+        "Weight": 5,
+        "Value": 470,
+        "Durability": 190,
+        "MaxDurability": 190
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 2,
+        "MagicDefense": 1,
+        "Name": "Sash of Celestial Harmony",
+        "Description": "A golden sash embroidered with sacred runes that bring balance to the soul.",
+        "Weight": 1,
+        "Value": 580,
+        "Durability": 230,
+        "MaxDurability": 230
       }
     ],
     "Legs": [
@@ -734,6 +1034,30 @@
         "Value": 380,
         "Durability": 190,
         "MaxDurability": 190
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 4,
+        "Name": "Greaves of the Lost Realm",
+        "Description": "The further one walks into the void, the less one remembers the way back.",
+        "Weight": 10,
+        "Value": 550,
+        "Durability": 230,
+        "MaxDurability": 230
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Gilded Skirt of Radiance",
+        "Description": "A flowing skirt made from light itself, allowing the wearer to move gracefully across any terrain.",
+        "Weight": 3,
+        "Value": 650,
+        "Durability": 280,
+        "MaxDurability": 280
       }
     ],
     "Feet": [
@@ -748,6 +1072,30 @@
         "Value": 350,
         "Durability": 185,
         "MaxDurability": 185
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 4,
+        "Name": "Silent Stride Boots",
+        "Description": "Not all shadows are empty. Some of them follow.",
+        "Weight": 7,
+        "Value": 530,
+        "Durability": 220,
+        "MaxDurability": 220
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 1,
+        "Name": "Slippers of the Celestial Waltz",
+        "Description": "Glowing slippers that leave trails of stardust, making the wearer as swift and elegant as the wind.",
+        "Weight": 2,
+        "Value": 600,
+        "Durability": 260,
+        "MaxDurability": 260
       }
     ],
     "Main-hand": [
@@ -762,6 +1110,30 @@
         "Value": 500,
         "Durability": 250,
         "MaxDurability": 250
+      },
+      {
+        "Attack": 7,
+        "MagicAttack": 8,
+        "Defense": 0,
+        "MagicDefense": 0,
+        "Name": "Nightpiercer, Rapier of The Void",
+        "Description": "A blade forged from the screams of forgotten Melons, it thirsts for the light.",
+        "Weight": 15,
+        "Value": 800,
+        "Durability": 300,
+        "MaxDurability": 300
+      },
+      {
+        "Attack": 5,
+        "MagicAttack": 0,
+        "Defense": 0,
+        "MagicDefense": 0,
+        "Name": "Staff of Infinite Love",
+        "Description": "A slender staff carved from divine crystal, radiating warmth and compassion with every spell cast.",
+        "Weight": 4,
+        "Value": 900,
+        "Durability": 320,
+        "MaxDurability": 320
       }
     ],
     "Off-hand": [
@@ -776,6 +1148,30 @@
         "Value": 450,
         "Durability": 230,
         "MaxDurability": 230
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 2,
+        "Defense": 5,
+        "MagicDefense": 6,
+        "Name": "Eclipse Aegis",
+        "Description": "A shield that does not block—it consumes.",
+        "Weight": 10,
+        "Value": 750,
+        "Durability": 290,
+        "MaxDurability": 290
+      },
+      {
+        "Attack": 0,
+        "MagicAttack": 0,
+        "Defense": 3,
+        "MagicDefense": 2,
+        "Name": "Aegis of the Starlit Empress",
+        "Description": "A radiant shield that shimmers with the light of the cosmos, capable of deflecting even the darkest magic.",
+        "Weight": 3,
+        "Value": 800,
+        "Durability": 350,
+        "MaxDurability": 350
       }
     ]
   }
